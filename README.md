@@ -1,8 +1,6 @@
 # Entry Macro
 
-![mac128](Images/mac128.png) This is the starter project for the video on the Entry Macro
-
-Release Date: May 4, 2025
+![mac128](Images/mac128.png) This is the completed source code for the video on the Entry Macro
 
 If you want to support my work, you can - </br>
 
