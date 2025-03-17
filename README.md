@@ -1,6 +1,6 @@
 # Entry Macro
 
-![mac128](Images/mac128.png) This is the starter project for the video on the Entry Macro
+![mac128](Images/mac128.png) This is the starter project for the video on the Entry Macro Part 1
 
 Release Date: May 4, 2025
 
