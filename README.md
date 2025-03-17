@@ -1,6 +1,6 @@
 # Entry Macro
 
-![mac128](Images/mac128.png) This is the completed source code for the video on the Entry Macro
+![mac128](Images/mac128.png) This is the completed source code for the video on the Entry Macro Part 2
 
 If you want to support my work, you can - </br>
 
