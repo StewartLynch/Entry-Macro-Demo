@@ -19,6 +19,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var addDetail = false
+    @Environment(\.appTheme) var appTheme
     var body: some View {
         NavigationStack {
             Image(systemName: "house")
@@ -29,10 +30,10 @@ struct HomeView: View {
                         Menu("Theme", systemImage: "gear") {
                             ForEach(Theme.Season.allCases) { season in
                                 Button {
-                                    // To be completed
+                                    appTheme.wrappedValue = Theme.set(for: season)
                                 } label: {
                                     // Checkmark if current theme
-                                    Label(season.rawValue, systemImage: "")
+                                    Label(season.rawValue.capitalized, systemImage: appTheme.season.wrappedValue == season ? "checkmark" : "minus")
                                 }
                             }
                         }
@@ -45,9 +46,11 @@ struct HomeView: View {
                 }
                 .sheet(isPresented: $addDetail) {
                     WifiPasswordView()
-                        .presentationDetents([.medium])
+//                        .presentationDetents([.medium])
                 }
+                .withBackground(color: appTheme.wrappedValue.background)
         }
+        
     }
 }
 

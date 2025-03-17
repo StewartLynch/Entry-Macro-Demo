@@ -15,4 +15,22 @@
 // Copyright © 2025 CreaTECH Solutions. All rights reserved.
 
 
-import Foundation
+import SwiftUI
+
+//struct AppColorKey: EnvironmentKey {
+//    static var defaultValue: Color = .red
+//}
+//
+//extension EnvironmentValues {
+//    var appColor: Color {
+//        get {
+//            self[AppColorKey.self]
+//        }
+//        set {
+//            self[AppColorKey.self] = newValue
+//        }
+//    }
+//}
+extension EnvironmentValues {
+    @Entry var appColor: Color = .red
+}

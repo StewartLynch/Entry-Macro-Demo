@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		BBCE391C2D872C860002A2B2 /* EntryMacroDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EntryMacroDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCE391C2D872C860002A2B2 /* EntryMacroDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntryMacroDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BBCE391E2D872C860002A2B2 /* EntryMacroDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "EntryMacroDemo";
+			path = EntryMacroDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -63,10 +63,10 @@
 			fileSystemSynchronizedGroups = (
 				BBCE391E2D872C860002A2B2 /* EntryMacroDemo */,
 			);
-			name = "EntryMacroDemo";
+			name = EntryMacroDemo;
 			packageProductDependencies = (
 			);
-			productName = "EntryMacroDemo";
+			productName = EntryMacroDemo;
 			productReference = BBCE391C2D872C860002A2B2 /* EntryMacroDemo.app */;
 			productType = "com.apple.product-type.application";
 		};

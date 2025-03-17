@@ -19,6 +19,7 @@ import SwiftUI
 
 struct WifiPasswordView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.appTheme) var appTheme
     var body: some View {
         NavigationStack {
             VStack{
@@ -34,6 +35,7 @@ struct WifiPasswordView: View {
                     dismiss()
                 }
             }
+            .withBackground(color: appTheme.wrappedValue.background)
         }
     }
 }

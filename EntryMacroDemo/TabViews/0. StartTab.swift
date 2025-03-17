@@ -19,6 +19,8 @@ import SwiftUI
 
 struct StartTab: View {
     @State private var selectedTab = 1
+    @State private var appTheme = Theme.set(for: .spring)
+//    @Environment(\.appColor) var appColor
     var body: some View {
         TabView(selection: $selectedTab) {
             Tab("Home", systemImage: "house", value: 1) {
@@ -26,11 +28,17 @@ struct StartTab: View {
             }
             Tab("Travel", systemImage: "airplane", value: 2) {
                 TravelView()
+                    .environment(\.appColor, .green) 
             }
             Tab("Highlight", systemImage: "party.popper", value: 3) {
                 HighlightView()
             }
         }
+        .environment(\.selectedTab, $selectedTab)
+        .environment(\.appTheme, $appTheme)
+        .environment(\.colorScheme, .light)
+        .tint(appTheme.tint)
+//        .tint(appColor)
     }
 }
 

@@ -18,6 +18,8 @@
 import SwiftUI
 
 struct TravelView: View {
+//    @Environment(\.appColor) var appColor
+    @Environment(\.appTheme) var appTheme
     var body: some View {
         NavigationStack{
             VStack {
@@ -29,6 +31,7 @@ struct TravelView: View {
                 .buttonStyle(.borderedProminent)
             }
             .navigationTitle("Travel")
+            .withBackground(color: appTheme.wrappedValue.background)
         }
     }
 }

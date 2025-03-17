@@ -23,20 +23,20 @@ struct Theme {
         var id: Self { self }
     }
     
-    var title: String
+    var season: Season
     var tint: Color
     var background: Color
     
     static func set(for season: Season) -> Theme {
         switch season {
         case .spring:
-            Theme(title: season.rawValue, tint: .purple, background:  .pink)
+            Theme(season: season, tint: .purple, background:  .pink)
         case .summer:
-            Theme(title: season.rawValue, tint:  .red, background: .yellow)
+            Theme(season: season, tint:  .red, background: .yellow)
         case .fall:
-            Theme(title: season.rawValue, tint:  .orange, background:  .brown)
+            Theme(season: season, tint:  .orange, background:  .brown)
         case .winter:
-            Theme(title: season.rawValue, tint:  .mint, background:  .cyan)
+            Theme(season: season, tint:  .mint, background:  .cyan)
         }
     }
 }

@@ -18,16 +18,22 @@
 import SwiftUI
 
 struct WeatherDetailView: View {
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.selectedTab) var selectedTab
+    @Environment(\.appTheme) var appTheme
     var body: some View {
         VStack {
             Image(systemName: "sun.rain.fill")
                 .symbolRenderingMode(.multicolor)
                 .font(.system(size: 200))
             Button("Go home") {
-                // To be completed
+                dismiss()
+                // Now go home
+                selectedTab.wrappedValue = 1
             }
             .buttonStyle(.bordered)
         }
+        .withBackground(color: appTheme.wrappedValue.background)
     }
 }
 

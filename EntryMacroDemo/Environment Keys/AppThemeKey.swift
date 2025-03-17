@@ -15,4 +15,8 @@
 // Copyright © 2025 CreaTECH Solutions. All rights reserved.
 
 
-import Foundation
+import SwiftUI
+
+extension EnvironmentValues {
+    @Entry var appTheme: Binding<Theme> = .constant(Theme.set(for: .spring))
+}

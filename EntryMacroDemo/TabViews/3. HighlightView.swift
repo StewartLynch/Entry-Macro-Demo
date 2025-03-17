@@ -18,11 +18,13 @@
 import SwiftUI
 
 struct HighlightView: View {
+    @Environment(\.appTheme) var appTheme
     var body: some View {
         NavigationStack {
             Image(systemName: "party.popper")
                 .font(.system(size: 250))
                 .navigationTitle("Highlights")
+                .withBackground(color: appTheme.wrappedValue.background)
         }
     }
 }
