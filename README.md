@@ -1,6 +1,6 @@
 # Entry Macro
 
-![mac128](Images/mac128.png) This is the completed source code for the video on the Entry Macro Part 1and is used as the Starter project for Part 2
+![mac128](Images/mac128.png) This is the completed source code for the video on the Entry Macro Part 1 and is used as the Starter project for Part 2
 
 Part 2 vide coming May 11
 
