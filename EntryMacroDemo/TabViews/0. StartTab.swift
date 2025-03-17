@@ -36,9 +36,7 @@ struct StartTab: View {
         }
         .environment(\.selectedTab, $selectedTab)
         .environment(\.appTheme, $appTheme)
-        .environment(\.colorScheme, .light)
         .tint(appTheme.tint)
-//        .tint(appColor)
     }
 }
 
