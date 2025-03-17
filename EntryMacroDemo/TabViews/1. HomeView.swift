@@ -46,7 +46,7 @@ struct HomeView: View {
                 }
                 .sheet(isPresented: $addDetail) {
                     WifiPasswordView()
-//                        .presentationDetents([.medium])
+                        .presentationDetents([.medium])
                 }
                 .withBackground(color: appTheme.wrappedValue.background)
         }
