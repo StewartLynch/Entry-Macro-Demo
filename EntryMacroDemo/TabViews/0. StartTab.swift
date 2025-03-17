@@ -28,7 +28,7 @@ struct StartTab: View {
             }
             Tab("Travel", systemImage: "airplane", value: 2) {
                 TravelView()
-                    .environment(\.appColor, .green) 
+//                    .environment(\.appColor, .green) 
             }
             Tab("Highlight", systemImage: "party.popper", value: 3) {
                 HighlightView()
