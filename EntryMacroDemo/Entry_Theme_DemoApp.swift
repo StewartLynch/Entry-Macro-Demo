@@ -22,6 +22,7 @@ struct Entry_Theme_DemoApp: App {
     var body: some Scene {
         WindowGroup {
             StartTab()
+                .preferredColorScheme(.light)
         }
     }
 }

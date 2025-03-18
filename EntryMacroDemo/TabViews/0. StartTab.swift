@@ -20,7 +20,7 @@ import SwiftUI
 struct StartTab: View {
     @State private var selectedTab = 1
 //    @State private var appTheme = Theme.set(for: .spring)
-    @AppStorage("appTheme")  var appTheme = Theme.set(for: .spring)
+    @AppStorage("appTheme") var appTheme = Theme.set(for: .spring)
 //    @Environment(\.appColor) var appColor
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -37,7 +37,6 @@ struct StartTab: View {
         }
         .environment(\.selectedTab, $selectedTab)
         .environment(\.appTheme, $appTheme)
-        .environment(\.colorScheme, .light)
         .tint(appTheme.tint.color)
 //        .tint(appColor)
     }
