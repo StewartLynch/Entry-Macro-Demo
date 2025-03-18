@@ -33,7 +33,7 @@ struct WeatherDetailView: View {
             }
             .buttonStyle(.bordered)
         }
-        .withBackground(color: appTheme.wrappedValue.background)
+        .withBackground(color: appTheme.wrappedValue.background.color)
     }
 }
 

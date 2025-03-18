@@ -1,7 +1,7 @@
 //
 //----------------------------------------------
 // Original project: EntryMacroDemo
-// by  Stewart Lynch on 2025-03-16
+// by  Stewart Lynch on 2025-03-17
 //
 // Follow me on Mastodon: https://iosdev.space/@StewartLynch
 // Follow me on Threads: https://www.threads.net/@stewartlynch
@@ -17,18 +17,14 @@
 
 import SwiftUI
 
-struct HighlightView: View {
-    @Environment(\.appTheme) var appTheme
-    var body: some View {
-        NavigationStack {
-            Image(systemName: "party.popper")
-                .font(.system(size: 250))
-                .navigationTitle("Highlights")
-                .withBackground(color: appTheme.wrappedValue.background.color)
-        }
+struct MaxHeightDetent: CustomPresentationDetent {
+    static func height(in context: Context) -> CGFloat? {
+        context.maxDetentValue * 0.99
     }
 }
 
-#Preview {
-    HighlightView()
+extension PresentationDetent {
+    static var maxHeight: PresentationDetent {
+        .custom(MaxHeightDetent.self)
+    }
 }

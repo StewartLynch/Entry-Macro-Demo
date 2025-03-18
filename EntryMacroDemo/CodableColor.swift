@@ -1,7 +1,7 @@
 //
 //----------------------------------------------
 // Original project: EntryMacroDemo
-// by  Stewart Lynch on 2025-03-16
+// by  Stewart Lynch on 2025-03-17
 //
 // Follow me on Mastodon: https://iosdev.space/@StewartLynch
 // Follow me on Threads: https://www.threads.net/@stewartlynch
@@ -17,18 +17,28 @@
 
 import SwiftUI
 
-struct HighlightView: View {
-    @Environment(\.appTheme) var appTheme
-    var body: some View {
-        NavigationStack {
-            Image(systemName: "party.popper")
-                .font(.system(size: 250))
-                .navigationTitle("Highlights")
-                .withBackground(color: appTheme.wrappedValue.background.color)
-        }
+struct CodableColor: Codable {
+    let red: Double
+    let green: Double
+    let blue: Double
+    let opacity: Double
+    
+    init(_ color: Color) {
+        let uiColor = UIColor(color)
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        
+        uiColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        
+        self.red = red
+        self.green = green
+        self.blue = blue
+        self.opacity = alpha
     }
-}
-
-#Preview {
-    HighlightView()
+    
+    var color: Color {
+        Color(red: red, green: green, blue: blue, opacity: opacity)
+    }
 }

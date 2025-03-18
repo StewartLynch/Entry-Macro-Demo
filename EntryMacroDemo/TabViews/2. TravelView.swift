@@ -31,7 +31,7 @@ struct TravelView: View {
                 .buttonStyle(.borderedProminent)
             }
             .navigationTitle("Travel")
-            .withBackground(color: appTheme.wrappedValue.background)
+            .withBackground(color: appTheme.wrappedValue.background.color)
         }
     }
 }
