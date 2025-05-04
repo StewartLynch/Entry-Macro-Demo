@@ -2,7 +2,9 @@
 
 ![mac128](Images/mac128.png) This is the starter project for the video on the Entry Macro Part 1
 
-Release Date: May 4, 2025
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=nun_jIRiYP0
+" target="_blank"><img src="http://img.youtube.com/vi/nun_jIRiYP0/0.jpg" 
+alt="Entry Macro" width="480" height="360" border="1" /></a>
 
 If you want to support my work, you can - </br>
 
